@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    android:background="@drawable/border"
+    android:backgroundTint="#F0242424"
+    android:padding="2dp">
+
+    <TextView
+        android:id="@+id/brewery_name"
+        android:layout_width="239dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="16dp"
+        android:text="Brewery Name: "
+        android:textAlignment="viewStart"
+        android:textColor="#1C53A4"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/distance_text"
+        android:layout_width="114dp"
+        android:layout_height="45dp"
+        android:textAlignment="center"
+        android:textColor="#1C53A4"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dist" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

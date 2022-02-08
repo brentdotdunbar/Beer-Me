@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0242424"
+    tools:context=".HomeScreen">
+
+    <Button
+        android:id="@+id/brewery_button"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="384dp"
+        android:backgroundTint="#D0EC9F65"
+        android:text="Breweries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/beer_button"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="384dp"
+        android:layout_marginEnd="56dp"
+        android:backgroundTint="#D0EC9F65"
+        android:text="Beers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/brewery_button"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/favorite_button"
+        android:layout_width="120dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginEnd="144dp"
+        android:backgroundTint="#D0EC9F65"
+        android:text="Favorites"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="179dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="serif"
+        android:text="What are you looking for?"
+        android:textAlignment="center"
+        android:textColor="#2A539D"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/brewery_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="411dp"
+        android:layout_height="322dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/logo3" />
+
+    <TextView
+        android:id="@+id/beer_fact"
+        android:layout_width="350dp"
+        android:layout_height="141dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="37dp"
+        android:textAlignment="center"
+        android:textColor="#728BFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/favorite_button"
+        tools:text="BeerFact" />
+</androidx.constraintlayout.widget.ConstraintLayout>
